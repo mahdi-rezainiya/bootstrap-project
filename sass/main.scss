@@ -1,15 +1,16 @@
 // custom variable
 // $primary : #c29938 ;
-$light : #fbf5e5 ;
+// $light : #fbf5e5 ;
 
-$theme-colors: (
-    // "primary":    $primary,
-    "secondary": #6c757d,
-    "light":  $light,
-    "purplight" : #f2ebfa ,
-    "purpdark" : #522192
-) ;
+// $theme-colors: (
+//     // "primary":  $primary,
+//     "secondary": #6c757d,
+//     "light":  $light,
+//     "purplight" : #f2ebfa ,
+//     "purpdark" : #522192
+// ) ;
 
 // import bootstrap
 
-@import '../node_modules/bootstrap/scss/bootstrap.scss'
+@import '../node_modules/bootstrap/scss/bootstrap.scss' ;
+@import '../node_modules/bootstrap-icons/font/bootstrap-icons.css';

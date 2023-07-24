@@ -1,22 +1,23 @@
+body{
+    user-select: none;
+}
 section{
     padding: 60px 0;
-    }
-    #collapse{
-        transition: all 1s ease-in;
-    }
-    .display-flex{
-        width: 100%;
-        display: flex;
-
-        align-items: center;
-    }
-    input[type="checkbox"] {
+}
+#collapse{
+    transition: all 1s ease-in;
+}
+.display-flex{
+    width: 100%;
+    display: flex;
+    align-items: center;
+}
+input[type="checkbox"] {
     appearance: none;
     -webkit-appearance: none;
     border-radius: 50%;
     background: #e8e8e8;
     border: 3px solid #FFF;
-
     outline: 1px solid #999;
 }
 .modal-body .row{
