@@ -1,0 +1,32 @@
+$primary : #98b3b0 ;
+$danger : #e9645b;
+
+.navbar-brand{
+    display: flex;
+}
+.dropdown-item:hover {
+    background-color: $primary;
+}
+#home-item {
+    background-color: #63aca6 ;
+}
+.dropdown-menu.show .dropdown-item:hover {
+    background-color: $primary;
+}
+#basic-addon1{
+    border: none;
+}
+#input-addon1{
+    display: none ;
+    border-radius: 4px ;
+    letter-spacing: 1px ;
+    border: none;
+}
+#input-addon1::placeholder {
+    color: white;
+}
+
+
+
+@import 'node_modules/bootstrap/scss/bootstrap.scss' ;
+@import 'node_modules/bootstrap-icons/font/bootstrap-icons.css'
