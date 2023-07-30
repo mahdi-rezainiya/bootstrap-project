@@ -2,6 +2,11 @@ $primary : #98b3b0 ;
 $danger : #e9645b;
 $gray: rgba(70 , 70 , 70 , 0.8) ;
 
+body{
+    overflow-x: hidden;
+}
+
+// navbar
 .navbar-brand{
     display: flex;
 }
@@ -39,6 +44,27 @@ $gray: rgba(70 , 70 , 70 , 0.8) ;
     background-color: rgb(211, 211, 211);
 }
 
+// image bar
+#image-bar{
+    width: 100%;
+    background-color:  #bcbcbc ;
+    height: 400px;
+}
+.bi-eject-fill{
+    margin-left: 20rem;
+}
+.card-img-top{
+    margin: 0;
+    border: 4px gray solid;
+    border-radius: 0 0 10px 10px;
+}
+.headerForCard{
+    border-radius: 10px 10px 0 0 ;
+}
+#cardForBiggerMode{
+    transform: scale(1.1);
+    z-index: 2;
+}
 
 @import 'node_modules/bootstrap/scss/bootstrap.scss' ;
 @import 'node_modules/bootstrap-icons/font/bootstrap-icons.css'
