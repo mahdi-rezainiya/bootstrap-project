@@ -47,9 +47,11 @@ body{
 // image bar
 #image-bar{
     width: 100%;
-    background-color:  #bcbcbc ;
-    height: 400px;
+    // background: rgb(255,255,255);
+    background: linear-gradient(0deg, white 0%, #bcbcbc 100%);
+    height: 700px;
 }
+
 .bi-eject-fill{
     margin-left: 20rem;
 }
