@@ -10,16 +10,57 @@
     <link rel="stylesheet" href="index.css">
     <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
-        /* #sectionForProgress{
-            position: absolute;
-            display: flex;
-            justify-content: center;
-        } */
-        /* #image-bar .container-lg{
-    width: auto;
-    height: 700px;
-    /* background-color: red; */
-/* } */ */
+
+.progress-container {
+  position: relative;
+}
+
+.progress-bar {
+}
+
+.progress-bar:before {
+  content: "0";
+  position: absolute;
+  left: 2px;
+  bottom: 60px;
+  font-size: 12px;
+  color: rgba(98, 107, 114, 1);
+}
+
+.progress-bar:after {
+  content: "600";
+  position: absolute;
+  right: -6px;
+  bottom: 60px;
+  font-size: 12px;
+  color: rgba(98, 107, 114, 1);
+}
+
+.widget {
+  padding: 25px;
+  margin: 0 auto;
+  width: 150px;
+  margin-top: 25px;
+  background-color: #fff;
+  -background-color: #222d3a;
+  border-radius: 5px;
+  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.3);
+  position: relative;
+}
+
+.points {
+  position: absolute;
+  margin: 0 auto;
+  left: 0;
+  right: 0;
+  bottom: 60px;
+  text-align: center;
+  text-transform: uppercase;
+  color: rgba(98, 107, 114, 1);
+  font-size: 12px;
+}
+
+
     </style>
 </head>
 
@@ -285,20 +326,41 @@
             <div class="row">
 
                 <div class="col-3">
-                    <h3></h3>
+                    <h3>Why Choose Us ?</h3>
                     <div id="pWithArrow">
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
-                        <p></p>
+                        <span>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </span>
+                        <span>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </span>
+                        <span>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </span>
+                        <span>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </span>
+                        <span>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </span>
+                        <span>
+                            <p>Lorem ipsum dolor sit amet</p>
+                        </span>
                     </div>
                 </div>
 
                 <div class="col-6">
                     <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus vero beatae vitae ut, nihil inventore reiciendis cum consequuntur dolores qui.</h5>
+                    
                     <div id="progressSection">
+
+                        <div class="widget">
+                            <div class="progress-container">
+                              <div class="progress-bar" id="loyalty">
+                                <div class="points">points</div>
+                              </div>
+                            </div>
+                          </div>
 
                     </div>
                 </div>
