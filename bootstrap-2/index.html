@@ -11,55 +11,6 @@
     <!-- <link rel="stylesheet" href="style.css"> -->
     <style>
 
-.progress-container {
-  position: relative;
-}
-
-.progress-bar {
-}
-
-.progress-bar:before {
-  content: "0";
-  position: absolute;
-  left: 2px;
-  bottom: 60px;
-  font-size: 12px;
-  color: rgba(98, 107, 114, 1);
-}
-
-.progress-bar:after {
-  content: "600";
-  position: absolute;
-  right: -6px;
-  bottom: 60px;
-  font-size: 12px;
-  color: rgba(98, 107, 114, 1);
-}
-
-.widget {
-  padding: 25px;
-  margin: 0 auto;
-  width: 150px;
-  margin-top: 25px;
-  background-color: #fff;
-  -background-color: #222d3a;
-  border-radius: 5px;
-  box-shadow: 1px 1px 4px 0px rgba(0, 0, 0, 0.3);
-  position: relative;
-}
-
-.points {
-  position: absolute;
-  margin: 0 auto;
-  left: 0;
-  right: 0;
-  bottom: 60px;
-  text-align: center;
-  text-transform: uppercase;
-  color: rgba(98, 107, 114, 1);
-  font-size: 12px;
-}
-
 
     </style>
 </head>
@@ -321,61 +272,85 @@
 
     <!-- progress section -->
 
-    <section id="sectionForProgress">
+    <section id="sectionForProgress" class="d-none d-lg-block">
         <div class="container-lg">
             <div class="row">
 
                 <div class="col-3">
-                    <h3>Why Choose Us ?</h3>
-                    <div id="pWithArrow">
+                    <h3 class="fw-bold text-muted">Why Choose Us ?</h3>
+                    <div id="pWithArrow" class="pt-4">
                         <span>
-                            <p>Lorem ipsum dolor sit amet</p>
+                            <p class="fw-bold">
+                                <i class="bi bi-arrow-right-short text-danger"></i>Lorem ipsum dolor sit amet</p>
                         </span>
                         <span>
-                            <p>Lorem ipsum dolor sit amet</p>
+                            <p class="fw-bold">
+                                <i class="bi bi-arrow-right-short text-danger"></i>Lorem ipsum dolor sit amet</p>
                         </span>
                         <span>
-                            <p>Lorem ipsum dolor sit amet</p>
+                            <p class="fw-bold">
+                                <i class="bi bi-arrow-right-short text-danger"></i>Lorem ipsum dolor sit amet</p>
                         </span>
                         <span>
-                            <p>Lorem ipsum dolor sit amet</p>
+                            <p class="fw-bold">
+                                <i class="bi bi-arrow-right-short text-danger"></i>Lorem ipsum dolor sit amet</p>
                         </span>
                         <span>
-                            <p>Lorem ipsum dolor sit amet</p>
+                            <p class="fw-bold">
+                                <i class="bi bi-arrow-right-short text-danger"></i>Lorem ipsum dolor sit amet</p>
                         </span>
                         <span>
-                            <p>Lorem ipsum dolor sit amet</p>
+                            <p class="fw-bold">
+                                <i class="bi bi-arrow-right-short text-danger"></i>Lorem ipsum dolor sit amet</p>
                         </span>
                     </div>
                 </div>
 
-                <div class="col-6">
+                <div class="col-6 text-muted">
                     <h5>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus vero beatae vitae ut, nihil inventore reiciendis cum consequuntur dolores qui.</h5>
                     
                     <div id="progressSection">
 
-                        <div class="widget">
-                            <div class="progress-container">
-                              <div class="progress-bar" id="loyalty">
-                                <div class="points">points</div>
-                              </div>
-                            </div>
-                          </div>
-
+                    <div class="multigraph">
+                        <span class="toolprog">70%</span>
+                        <span class="graph"></span>
+                    </div>
+                    <div class="multigraph">
+                        <span class="toolprog">70%</span>
+                        <span class="graph"></span>
+                    </div>
+                    <div class="multigraph">
+                        <span class="toolprog">70%</span>
+                        <span class="graph"></span>
+                    </div>
+                    <div class="multigraph">
+                        <span class="toolprog">70%</span>
+                        <span class="graph"></span>
+                    </div>
                     </div>
                 </div>
 
                 <div class="col-3">
-                    <h3></h3>
-                    <p></p>
+                    <h3 class="fw-bold text-muted">What Clients Say ?</h3>
+                    <p class="fw-bold mt-4 pt-2">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Dolorem voluptate, voluptas veritatis, nihil dolor assumenda ex, nesciunt odit velit blanditiis temporibus. Maxime rerum veritatis assumenda, omnis magni eaque officiis obcaecati!</p>
                 </div>
 
             </div>
         </div>
     </section>
 
-
-
+    <!-- our happy clients -->
+    <section class="d-none d-lg-block">
+        <div class="container-lg" id="linkNextPrev">
+            <span>
+                <a href="#" class="text-decoration-none text-muted">Our Happy Clients</a>
+            </span>
+            <span class="text-muted">
+                <i class="bi bi-arrow-left-square-fill"></i>
+                <i class="bi bi-arrow-right-square-fill"></i>
+            </span>
+        </div>
+    </section>
 
 
 

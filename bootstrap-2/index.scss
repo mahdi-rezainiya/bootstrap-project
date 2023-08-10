@@ -68,5 +68,72 @@ body{
     z-index: 2;
 }
 
+// progress
+#progressSection{
+    display: flex;
+    justify-content: space-around;
+}
+.multigraph {
+width: 5px;
+height: 5px;
+position: relative;
+top: 50%;
+left: 0; 
+transform: translateX(-60px);
+}
+.multigraph:before {
+content: '';
+width: 5px;
+height: 5px;
+border-bottom: none;
+}
+.toolprog {
+width: 10px;
+height: 10px;
+background: lightgrey;
+text-align: center;
+color: #000;
+border: 1px solid gray;
+position: absolute;
+transition: all 300ms ease-in-out;
+box-shadow: 0 0 5px grey;
+opacity: 0;
+}
+
+.multigraph:hover .toolprog {
+bottom: 75%;
+opacity: .8;
+transform: scale(1);
+}
+.graph {
+width: 100px;
+height: 100px;
+position: absolute;
+overflow:hidden;
+}
+.graph:before, .graph:after {
+width: 100px;
+height: 50px;
+position: absolute;
+top: 100%;
+border: 10px solid red;
+content: '';
+border-radius:0 0 300px 300px;
+border-top: none;
+animation: demo 3s;
+transform-origin: center top;
+}
+.graph:after {
+transform: rotate(150deg);
+}
+
+@keyframes demo {
+0% { transform: rotate(0deg) }
+50% { transform: rotate(180deg) }
+}
+#linkNextPrev{
+    display: flex;
+    justify-content: space-between
+}
 @import 'node_modules/bootstrap/scss/bootstrap.scss' ;
 @import 'node_modules/bootstrap-icons/font/bootstrap-icons.css'
